@@ -20,3 +20,7 @@ git clone https://github.com/sharadrathod/angular_springboot_project.git
 ```sh
 mysql -h <endpoint> -u <user> -p<password> springbackend < springbackend.sql 
 ```
+Login to the database again:
+```sh
+mysql -h <endpoint> -u <user> -p<password> 
+```
