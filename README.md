@@ -43,4 +43,8 @@ mysql -h <endpoint> -u <user> -p<password>
   - View the content of the table:
   ```sh
   select * from tbl_workers;
-  ```
+  ``` 
+  - go into backend directory
+  - there is one file backend/application.properties
+  - add there <endpoint of db> 
+  - user_name and password of mysql database 
