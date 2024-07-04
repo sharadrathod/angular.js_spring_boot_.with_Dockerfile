@@ -14,7 +14,11 @@ exit
 ```
 - clone github repo 
 ```sh
-git clone https://github.com/sharadrathod/angular.js_spring_boot_.with_Dockerfile.git
+git clone https://github.com/sharadrathod/angular.js_spring_boot_.with_Dockerfile.git 
+```
+- go into cloned repo
+```sh
+cd angular.js_spring_boot_.with_Dockerfile
 ``` 
 - create shchema in mysql 
 ```sh
