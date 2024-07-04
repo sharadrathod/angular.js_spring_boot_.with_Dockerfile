@@ -46,12 +46,61 @@ mysql -h <endpoint> -u <user> -p<password>
   ``` 
   ## backend 
 
-  - go into backend directory
+  - go into backend directory 
+  ```sh
+  cd backend
+  ```
   - there is one file backend/application.properties
-  - add there <endpoint of db> 
-  - user_name and password of mysql database 
+  ```sh
+  vim application.properties
+  ```
+  - add there <endpoint of db>:3306
+  - add user_name of=admin 
+  - password=Admin123
+
   ## frontend 
 
   - cd into frontend 
+  ```sh
+  cd frontend 
+  ```
   - edit worker.service.tf
+  ```sh
+  vim worker.service.tf
+  ```
   - add public ip of instance and port we exposed 8085 
+
+  ## Docker build
+
+  ### backend 
+  - cd into backend 
+  ```sh
+  cd backend 
+  ```
+  - **Docker build**
+  ```sh
+  docker build -t "backend" .
+  ```
+  - **run and expose container**
+  ```sh
+  docker run -d -p 8085:8085 backend
+  ```
+  - check container 
+  ```sh
+  docker ps
+  ```
+  ### frontend 
+  - cd into frontend
+  - ***run and expose container**
+  ```sh
+  docker run -d -p 30080:30080 frontend
+  ```
+  - check container 
+  ```sh
+  docker ps
+  ```
+  - ***access page**
+  ```sh
+  public_ip_of_instance:30080/workers
+  ```
+  
