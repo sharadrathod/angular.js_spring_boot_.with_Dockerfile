@@ -24,3 +24,19 @@ Login to the database again:
 ```sh
 mysql -h <endpoint> -u <user> -p<password> 
 ```
+- View all the databases created:
+  ```sh
+  SHOW DATABASES;
+  ```
+  - Use the database:
+  ```sh
+  use springbackend;
+  ```
+  - View the tables created:
+  ```sh
+  SHOW tables;
+  ```
+  - View the content of the table:
+  ```sh
+  select * from tbl_workers;
+  ```
