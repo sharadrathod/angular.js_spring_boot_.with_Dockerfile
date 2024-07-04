@@ -44,7 +44,14 @@ mysql -h <endpoint> -u <user> -p<password>
   ```sh
   select * from tbl_workers;
   ``` 
+  ## backend 
+
   - go into backend directory
   - there is one file backend/application.properties
   - add there <endpoint of db> 
   - user_name and password of mysql database 
+  ## frontend 
+
+  - cd into frontend 
+  - edit worker.service.tf
+  - add public ip of instance and port we exposed 8085 
