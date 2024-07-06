@@ -1,4 +1,4 @@
-# launch rds mysql db instance 
+## launch rds mysql db instance 
 
 - login in cloudshell:
 ```sh
@@ -95,7 +95,7 @@ mysql -h <endpoint> -u <user> -p<password>
   ```sh
   docker build -t "piyu5233/angular-test:frontend" .
   ```
-  - ***run and expose container**
+  - **run and expose container**
   ```sh
   docker run -d -p 30080:30080 frontend
   ```
