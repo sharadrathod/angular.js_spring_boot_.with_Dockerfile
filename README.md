@@ -79,7 +79,7 @@ mysql -h <endpoint> -u <user> -p<password>
   ```
   - **Docker build**
   ```sh
-  docker build -t "backend" .
+  docker build -t "piyu5233/angular-test:backend" .
   ```
   - **run and expose container**
   ```sh
